@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const ejs = require("ejs");
 
 //initialize config file 
-dotenv.config({path: './config.env'})
+//dotenv.config({path: './config.env'})
 
 
 //azure healthbot
@@ -15,9 +15,9 @@ const jwt = require("jsonwebtoken");
 const rp = require("request-promise");
 const cookieParser = require('cookie-parser');
 const { dirname } = require("path");
-const WEBCHAT_SECRET = process.env.WEBCHAT_SECRET;
-const DIRECTLINE_ENDPOINT_URI = process.env.DIRECTLINE_ENDPOINT_URI;
-const APP_SECRET = process.env.APP_SECRET;
+const WEBCHAT_SECRET = process.env.APPSETTING_WEBCHAT_SECRET;
+const DIRECTLINE_ENDPOINT_URI = process.env.APPSETTING_DIRECTLINE_ENDPOINT_URI;
+const APP_SECRET = process.env.APPSETTING_APP_SECRET;
 const directLineTokenEp = `https://${DIRECTLINE_ENDPOINT_URI || "directline.botframework.com"}/v3/directline/tokens/generate`;
 
 
@@ -33,14 +33,14 @@ let options = {};
 //app.use(express.static(`${__dirname}/frontend`));
 app.use(express.static(path.join(__dirname, "frontend"), options));
 //mongodb database
-const DB = process.env.DATABASE.replace(
-    '<PASSWORD>', 
-    process.env.DATABASE_PASSWORD
-);
+//const DB = process.env.DATABASE.replace(
+//    '<PASSWORD>', 
+//    process.env.DATABASE_PASSWORD
+//);
 
 //cosmos-db database
-const dbTwo = process.env.databaseTwo.replace(
-    '<primary_master_key>', process.env.databaseTwoKey
+const dbTwo = process.env.APPSETTING_databaseTwo.replace(
+    '<primary_master_key>', process.env.APPSETTING_databaseTwoKey
 ); 
 
 //mopngoose 
@@ -133,10 +133,10 @@ app.use('/api/v1/appointments', productRouter);
 
 
 //start
-const region = process.env.REGION || "Unknown";
-const port = process.env.PORT
-app.listen(port, function(){
-    console.log('server started @ port 3000');
+const region = process.env.APPSETTING_REGION || "Unknown";
+const port = process.env.APPSETTING_PORT
+app.listen(port || 5040, function(){
+    console.log('server started');
 });
  
 
