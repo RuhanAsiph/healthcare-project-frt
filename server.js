@@ -134,8 +134,8 @@ app.use('/api/v1/appointments', productRouter);
 
 //start
 const region = process.env.REGION || "Unknown";
-const port = process.env.PORT
-app.listen(port, function(){
+
+app.listen(process.env.PORT || 3000, function(){
     console.log('server started @ port 3000');
 });
  
