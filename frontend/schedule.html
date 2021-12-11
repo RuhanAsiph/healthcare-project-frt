@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Clinical Diagnostics Library</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo clinical-header"><i class="fas fa-procedures borsdr" style="color: rgb(255, 255, 255);"></i>      Online Clinical Diagnosis</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/appointments">Appointments</a></li>
+                    <li><a href="/schedule">Schedule</a></li>
+                    <li><a href="/chatbot">chat-bot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Showcase-->
+    <div class="container larem" >
+			This is a testing project, intended for demo sessions only.
+            Schedule your appointment now!
+            <form method="POST" action="/api/v1/appointments">
+                <label>Your Name?</label>
+                <input class="widem" type="text" name="name" required />
+                <label>Your Appointment Details?</label>
+                <input class="widem" type="text" name="number" required />
+                <label>Email</label>
+                <input class="widem" type="email" name="email" required />
+                <input type="submit" value="Schedule Now!" class="btn-primary">
+            </form>
+				
+		
+		</div>
+<!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3 grid-4">
+            <div>
+                <h1>Online Clinical Diagnosis</h1>
+                <p>Copyright &copy; 2021</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/appointments">Appointments</a></li>
+                    <li><a href="/schedule">Schedule</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                Society highly values its normal man. 
+            </div>
+        </div>
+    </footer>
+    <section class="news"><b class="darkoth">This is a testing project, and not an ongoing healthcare sector. Don't send any personal data. This website is 
+        intended for testing purposes only
+    </section>
+</body>
+</html>

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+:root {
+    --primary-color: #630000;
+    --second-shade: #eeebdd;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+/* Navbar */
+
+.navbar {
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar a:hover {
+    border-bottom: 2px var(--second-shade) solid;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* Showcase */
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase {
+    height: 550px;
+    background-color: var(--second-shade);
+    color: #000000;
+    position: relative;
+}
+.showcase h1 {
+    font-size: 35px;
+}
+.showcase p {
+    margin: 20px 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.showcase-form {
+    position: relative;
+    top: 160px;
+    height: 380px;
+    width: 400px;
+    padding: 40px;
+    z-index: 90;
+    justify-self: flex-end;
+}
+.showcase .form-control {
+    margin: 30px 0;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+    border: 0;
+    border-bottom: 1px solid #fff ;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    color: rgb(255, 254, 208);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+.showcase-form input:focus {
+    outline: none;
+   
+}
+
+/* Mainframe */
+.stats {
+    padding-top: 130px;
+    
+}
+
+.stats-heading {
+    
+    margin: auto;
+}
+
+.stats .grid h3 {
+    border-bottom: 2px solid black;
+    
+}
+
+.stats .grid p {
+    
+}
+.grid-3 i {
+    color: var(--primary-color);
+
+}
+
+.grid-3 i:hover {
+    
+}
+
+.grid-4 i {
+    color: white;
+}
+
+/* Footer */
+
+.footer .socials a {
+    margin: 0 5px;
+}
+
+/* Tablets and under */
+@media(max-width: 1000px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        height: 110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    } 
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .showcase {
+        height: auto;
+    }
+    
+    .showcase-text {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+    .stats .container {
+        margin-top: 60px;
+    }
+}
+/* Mobile */
+@media(max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    } 
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0,0,0,0.1);
+    }
+}
+
+.borsdr {
+    padding-bottom: 5px;
+    
+}
+
+.clinical-header {
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgb(175, 196, 255);
+}
+
+.stats {
+    background-image: url("../images/martha-dominguez-de-gouveia-KF-h9HMxRKg-unsplash.jpg");
+}
+
+.lame {
+    background-color: rgb(131, 174, 255);
+    color: rgb(0, 0, 0);
+}
+
+.bran {
+    padding: 10px;
+    border-left: 4px solid rgb(98, 10, 10);
+}
+
+.larem {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+html, body {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  
+  #webchat {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #webchat[watermark="true"] [role="complementary"] ul[role="list"]::after {
+    content: "Powered By ...";
+    background: linear-gradient(rgba(248, 248, 248, 0), rgba(248, 248, 248, .63), #F8F8F8 40%);
+    bottom: 0;
+    right: 0;
+    color: #707070;
+    display: block;
+    font-family: 'Segoe Semibold', Calibri, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    padding: 15px 10px 10px;
+    position: absolute;
+    position: sticky;
+    text-align: right;
+  }
+  
+  #webchat[watermark="true"] .webchat__scrollToEndButton {
+    bottom: 32px;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 0);
+  }
+  

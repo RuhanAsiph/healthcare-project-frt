@@ -1,0 +1,28 @@
+
+// ----------------experimentation------------------------
+exports.getAppointments = async (req, res) => {
+
+    try {
+        
+    const appointments = await Product.find();
+
+    res.status(200).json({
+        status: "success",
+        results: appointments.length,
+        data: {
+            appointments
+        }
+    });
+    } catch(err) {
+        res.status(404).json({
+            status: 'fail',
+            message: err
+        })
+    }
+
+}
+
+
+//---------------------------------------------------------
+
+

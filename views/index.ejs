@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome CDN-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    
+    <title>Clinical Diagnostics Library</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo clinical-header"><i class="fas fa-procedures borsdr" style="color: rgb(255, 255, 255);"></i>      Online Clinical Diagnosis</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/appointments">Appointments</a></li>
+                    <li><a href="/schedule">Schedule</a></li>
+                    <li><a href="/chatbot">Chat Bot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Showcase-->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text bran">
+                <h1 class="orange-personal"></i>Emergency Appointment System </h1>
+                <p>Patients when hit with trauma of a physical injury or from a mental illness, they quite often overlook the symptoms at their first clinical diagnosis. 
+                    Thus, the patient doesn't receive the proper treatment and resulting in ineffective treatment plan. 
+                    This is where the solution comes in: Online Clinical Diagnosis. Online Clinical Diagnosis will not only let
+                    patient directly interact with the Doctor but also provide useful feedback in terms of his recovery. 
+                    This will be done with seamless integration of Azure Health Bot which will allow the patients book an appointment 
+                    with our doctors directly. <b class="darkoth">This is a testing project, and not an ongoing healthcare sector. Don't send any personal data. This website is 
+                    intended for testing purposes only
+                    </b></p>
+            </div>
+            <div class="showcase-form card">
+                <h2>Schedule An Appointment</h2>
+                <form method="POST" action="/api/v1/appointments">
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="number" placeholder="When will you be visiting?" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <input type="submit" value="Schedule Now!" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>  
+    <!--Mainframe-->
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1 lame">
+                The Demand for private healthcare system is ever increasing with the increase in population. And to tackle the overpopulation crisis we 
+                have developed the online booking system which schedules you for an appointment within a few clicks of a button. 
+            </h3>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-heart fa-3x"></i>
+                    <h3>Love</h3>
+                    <p class="text-secondary">
+                        <strong> Our patients are like our family </strong>
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-hand-holding-water fa-3x"></i>
+                    <h3>Priority</h3>
+                    <p class="text-secondary">
+                        <strong> We serve those who are in need </strong>
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-thermometer-empty fa-3x" aria-hidden="true"></i>
+
+                    <h3>Monthly Sessions</h3>
+                    <p class="text-secondary">
+                        <strong>Monthly sessions for mainintaing the health status of out Patients </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Footer-->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3 grid-4">
+            <div>
+                <h1>Online Clinical Diagnosis</h1>
+                <p>Copyright &copy; 2021</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/appointments">Appointments</a></li>
+                    <li><a href="/schedule">Schedule</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                Society highly values its normal man. 
+            </div>
+        </div>
+    </footer>
+    <section class="news"><b class="darkoth">This is a testing project, and not an ongoing healthcare sector. Don't send any personal data. This website is 
+        intended for testing purposes only
+    </section>
+    </div>
+  
+</body>
+</html>

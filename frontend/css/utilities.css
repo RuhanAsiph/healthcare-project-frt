@@ -1,0 +1,199 @@
+/* utilities */
+
+.card {
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--second-shade);
+    color: #000;
+    margin: 0 auto;
+    border: none;
+    margin-left: 0px;
+}
+.btn:hover {
+    transform: scale(0.99);
+   
+    
+}
+
+.btn-outline {
+    background-color: #1b1717;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.orange-personal {
+    color: var(--primary-color);
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+   
+}
+.grid-4 {
+    color: white;
+}
+
+
+/* Margin */
+.my-1 {
+    margin: 1rem 0;
+}
+.my-2 {
+    margin: 1.5rem 0;
+}
+.my-3 {
+    margin: 2rem 0;
+}
+.my-4 {
+    margin: 3rem 0;
+}
+.my-5 {
+    margin: 4rem 0;
+}
+
+.m-1 {
+    margin: 1rem ;
+}
+.m-2 {
+    margin: 1.5rem;
+}
+.m-3 {
+    margin: 2rem;
+}
+.m-4 {
+    margin: 3rem;
+}
+.m-5 {
+    margin: 4rem;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+.py-2 {
+    padding: 1.5rem 0;
+}
+.py-3 {
+    padding: 2rem 0;
+}
+.py-4 {
+    padding: 3rem 0;
+}
+.py-5 {
+    padding: 4rem 0;
+}
+.p-1 {
+    padding: 1rem ;
+}
+.p-2 {
+    padding: 1.5rem;
+}
+.p-3 {
+    padding: 2rem;
+}
+.p-4 {
+    padding: 3rem;
+}
+.p-5 {
+    padding: 4rem;
+}
+.bg-dark {
+    background-color: #000;
+}
+.news {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+   
+    color: white;
+    text-align: center;
+}
+.news p {
+    background-color: rgb(75, 37, 37);
+    
+   
+    
+    padding: 0;
+    margin: 0;
+}
+
+.widem {
+    background-color: rgb(119, 58, 58);
+    width: 100%;
+    color: white;
+}
+ label{
+    background-color: rgb(105, 162, 255);
+    color: white;
+ }
+
+ 
+ #customers {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #642d2d;
+    color: white;
+  }
+
+  .real-time {
+      color: black;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      text-align: center;
+      border-bottom: 2px solid black;
+  }
+.centershock {
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+.darkoth {
+    background-color: rgb(149, 37, 37);
+    color: rgb(255, 255, 255);
+}
