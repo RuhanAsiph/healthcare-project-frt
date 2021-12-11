@@ -33,18 +33,18 @@ let options = {};
 //app.use(express.static(`${__dirname}/frontend`));
 app.use(express.static(path.join(__dirname, "frontend"), options));
 //mongodb database
-//const DB = process.env.DATABASE.replace(
-//    '<PASSWORD>', 
-//    process.env.DATABASE_PASSWORD
-//);
+const DB = process.env.DATABASE.replace(
+    '<PASSWORD>', 
+    process.env.DATABASE_PASSWORD
+);
 
 //cosmos-db database
-const DBTWO = process.env.DATABASE_TWO.replace(
-    '<primary_master_key>', process.env.DATABASE_TWO_KEY
+const dbTwo = process.env.databaseTwo.replace(
+    '<primary_master_key>', process.env.databaseTwoKey
 ); 
 
 //mopngoose 
-mongoose.connect(DBTWO, { useNewUrlParser: true, useUnifiedTopology: true}).then(con => {
+mongoose.connect(dbTwo, { useNewUrlParser: true, useUnifiedTopology: true}).then(con => {
     console.log('db con successful');
 });
 
@@ -134,8 +134,8 @@ app.use('/api/v1/appointments', productRouter);
 
 //start
 const region = process.env.REGION || "Unknown";
-
-app.listen(process.env.PORT || 3000, function(){
+const port = process.env.PORT
+app.listen(port, function(){
     console.log('server started @ port 3000');
 });
  
